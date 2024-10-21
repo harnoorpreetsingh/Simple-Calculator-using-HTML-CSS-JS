@@ -28,7 +28,7 @@ Array.from(buttons).forEach((btn) => {
             }
 
             // Prevent multiple consecutive operators or invalid sequences
-            const operators = ['+', '-', '*', '/'];
+            const operators = ['+', '-', '*', '/', '%'];
             if (operators.includes(value) && (operators.includes(string.slice(-1)) || string.slice(-1) === '.')) {
                 return;
             }
