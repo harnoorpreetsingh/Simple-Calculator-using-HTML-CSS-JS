@@ -1,6 +1,4 @@
-
-
-let string = "0"; // Initializing with "0"
+let string = "0"; // Initialize with "0"
 let buttons = document.querySelectorAll(".btn");
 
 // Set the default value of the input field to "0"
@@ -29,7 +27,13 @@ Array.from(buttons).forEach((btn) => {
                 }
             }
 
-            // Allowing leading zero if followed by a decimal point
+            // Prevent multiple consecutive operators or invalid sequences
+            const operators = ['+', '-', '*', '/'];
+            if (operators.includes(value) && (operators.includes(string.slice(-1)) || string.slice(-1) === '.')) {
+                return;
+            }
+
+            // Allow leading zero if followed by a decimal point
             if (value === '0' && string === "0") {
                 return;
             }
