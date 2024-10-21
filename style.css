@@ -1,0 +1,36 @@
+h1{
+   text-shadow: 0 2px 10px rgb(65, 132, 172) ; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+.calc{
+    margin: 2px;
+    padding: 12px;
+    width: fit-content;
+    gap: 2px;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.btn{
+    border-color: rgb(65, 132, 172);
+    margin: 5px;
+    gap: 5px;
+    box-shadow: 0 2px 10px rgb(65, 132, 172);
+}
+input{
+    height: 55px;
+    margin: 5px;
+    padding-bottom: 4px;
+    width: 132px;
+    box-shadow: 0 1px 11px rgb(142, 160, 170);
+}
+.clrbtn{
+    background-color: #ff4136;
+    color: white;
+    border-color: #ff4136;
+    box-shadow: 0 1px 11px #ff4136;
+}
